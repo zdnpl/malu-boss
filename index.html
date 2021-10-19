@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MALU BOSS!!</title>
+</head>
+<body>
+	<p id="word"><!--MALU BOSS!! UDAH GEDE GABISA BIKIN GINI :p--></p>
+</iframe> 
+
+	<style type="text/css">
+		@import url('http://fonts.cdnfonts.com/css/nervousm');
+
+		body {
+			width: 10000px;
+			background-color: black;
+		}
+
+		p {
+			font-family: 'Nervousm', sans-serif;
+			font-size: 300px;
+			color: red;
+			animation: text-jalan 10s ease-in-out;
+
+		}
+
+		@keyframes text-jalan {
+			0%, 100% {
+				transform: translateX(2500px);
+			}
+			100% {
+				transform: translateX(-6000px);
+			}
+		}
+	</style>
+
+	<script type="text/javascript">
+		let word = document.querySelector("#word");
+
+		alert("Note : kalo animasi nya error, refresh aja ya");
+		var inputKata = prompt('Enter your text');
+		if (inputKata) {
+			word.innerHTML = inputKata;
+		}
+		else {
+			alert('Text cant be empty!');
+		}
+	</script>
+</body>
+</html>
